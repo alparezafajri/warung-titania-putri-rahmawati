@@ -1,0 +1,135 @@
+/* ==== GENERAL ==== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf2;
+    color: #333;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+    position: relative;
+    height: 300px;
+    background: url("mi-sedaap-seeklogo.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 0, 18, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-logo {
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* ==== MENU SECTION ==== */
+.menu-wrapper {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: #e60012;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+/* ==== MENU GRID ==== */
+.menu-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* ==== MENU CARD ==== */
+.menu-card {
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.10s;
+    padding-bottom: 10px;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 15px 0 5px;
+    color: #e60012;
+}
+
+.desc {
+    font-size: 0.9rem;
+    padding: 0 15px;
+    color: #555;
+    min-height: 45px;
+}
+
+.price {
+    display: inline-block;
+    margin-top: 10px;
+    background: #ffcc00;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #e60012;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    background: #e60012;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 100px;
+    font-size: 0.9rem;
+}
+img {
+  width: 10%;
+  height: auto;
+}
+.wa{
+    position: right;
+    height: 10px;
+    background: url("WhatsApp.svg.webp") right;
+    display: right;
+    align-items: right;
+    justify-content: right;
+}
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    }
+}
